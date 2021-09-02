@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import logo from "./images/undraw_secure_login_pdn4.svg";
 import { useHistory, Link } from "react-router-dom";
 import { UserContext } from "../App";
+import {axoisIN} from "../config"
 
 const Login = () => {
   const { state, dispatch } = useContext(UserContext);
@@ -12,7 +13,7 @@ const Login = () => {
   const loginUser = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("/login", {
+    const res = await axoisIN("/login", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

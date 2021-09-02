@@ -2,6 +2,7 @@ import React, { useEffect ,useContext } from "react";
 
 import { useHistory } from "react-router-dom";
 import {UserContext} from "../App"
+import {axoisIN} from "../config"
 
 const Logout = () => {
 
@@ -9,7 +10,7 @@ const Logout = () => {
     const history = useHistory()
     const logout = async () => {
        
-      const res = await fetch("/logout", {
+      const res = await axoisIN("/logout", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

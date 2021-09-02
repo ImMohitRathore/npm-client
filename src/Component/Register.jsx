@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "./images/undraw_Hello_re_3evm.svg";
 import "./style.css";
 import { useHistory, Link } from "react-router-dom";
+import {axoisIN} from "../config"
 
 
 const Register = () => {
@@ -28,7 +29,7 @@ const Register = () => {
     e.preventDefault();
     const { name, email, phone, work, password, cpassword } = user;
 
-    const res = await fetch("https://mernmernmenr.herokuapp.com/register", {
+    const res = await axoisIN("/register", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

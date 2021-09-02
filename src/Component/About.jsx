@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 
 import { useHistory } from "react-router-dom";
 
+import {axoisIN} from "../config"
+
  const profile= "https://freesvg.org/img/winkboy.png"
  
  const About = () => {
@@ -11,7 +13,7 @@ import { useHistory } from "react-router-dom";
      
      const check= async()=>{
         try{
-            const res = await fetch("/about",{
+            const res = await axoisIN("/about",{
                 method : "GET",
                 headers:{
                     Accept : "application/json",

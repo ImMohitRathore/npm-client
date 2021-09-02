@@ -6,6 +6,7 @@ import "./main.css"
 
 import CreatNote from  "./component2/CreatNote"
 import Notes from "./component2/Note"
+import {axoisIN} from "../config"
 
 
 const App =()=>{
@@ -17,7 +18,7 @@ const App =()=>{
      
   const check= async()=>{
      try{
-         const res = await fetch("/dairy",{
+         const res = await axoisIN("/dairy",{
              method : "GET",
              headers:{
                  Accept : "application/json",

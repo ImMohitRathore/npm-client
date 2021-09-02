@@ -1,13 +1,13 @@
 import React, {  useState, useEffect } from 'react'
 import "./style.css"
-
+import {axoisIN} from "../config"
 const Contact = () => {
 
     const [info , setinfo] = useState({})
        
     const check= async()=>{
         try{
-            const res = await fetch("/contact",{
+            const res = await axoisIN("/contact",{
                 method : "GET",
                 headers:{
                     
