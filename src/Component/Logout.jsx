@@ -10,7 +10,7 @@ const Logout = () => {
     const history = useHistory()
     const logout = async () => {
        
-      const res = await fetch("https://mernmernmenr.herokuapp.com//logout", {
+      const res = await fetch("https://mernmernmenr.herokuapp.com/logout", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

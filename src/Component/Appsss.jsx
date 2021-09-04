@@ -18,7 +18,7 @@ const App =()=>{
      
   const check= async()=>{
      try{
-         const res = await fetch("https://mernmernmenr.herokuapp.com//dairy",{
+         const res = await fetch("https://mernmernmenr.herokuapp.com/dairy",{
              method : "GET",
              headers:{
                  Accept : "application/json",

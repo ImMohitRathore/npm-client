@@ -29,7 +29,7 @@ const Register = () => {
     e.preventDefault();
     const { name, email, phone, work, password, cpassword } = user;
 
-    const res = await fetch("https://mernmernmenr.herokuapp.com//register", {
+    const res = await fetch("https://mernmernmenr.herokuapp.com/register", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
