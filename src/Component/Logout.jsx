@@ -10,7 +10,7 @@ const Logout = () => {
     const history = useHistory()
     const logout = async () => {
        
-      const res = await axoisIN("/logout", {
+      const res = await fetch("/logout", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

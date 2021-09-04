@@ -13,7 +13,7 @@ const Login = () => {
   const loginUser = async (e) => {
     e.preventDefault();
 
-    const res = await axoisIN("/login", {
+    const res = await fetch("/login", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

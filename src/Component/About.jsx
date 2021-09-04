@@ -13,7 +13,7 @@ import {axoisIN} from "../config"
      
      const check= async()=>{
         try{
-            const res = await axoisIN("/about",{
+            const res = await fetch("/about",{
                 method : "GET",
                 headers:{
                     Accept : "application/json",
