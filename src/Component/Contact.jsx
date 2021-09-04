@@ -7,7 +7,7 @@ const Contact = () => {
        
     const check= async()=>{
         try{
-            const res = await axoisIN("/contact",{
+            const res = await fetch("https://mernmernmenr.herokuapp.com//contact",{
                 method : "GET",
                 headers:{
                     

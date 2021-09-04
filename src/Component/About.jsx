@@ -13,7 +13,7 @@ import {axoisIN} from "../config"
      
      const check= async()=>{
         try{
-            const res = await fetch("/about",{
+            const res = await fetch("https://mernmernmenr.herokuapp.com//about",{
                 method : "GET",
                 headers:{
                     Accept : "application/json",
